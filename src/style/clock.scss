@@ -1,0 +1,43 @@
+.clock {
+  grid-row: 3/4;
+  grid-column: 2/10;
+  align-self: end;
+
+  background-color: #444;
+  height: 85%;
+  width: 100%;
+
+  -webkit-clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  grid-column-gap: 1px ;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+
+  text-align: left;
+
+  &__box {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 25px;
+    color: #F7D754;
+    font-family: 'Roboto Condensed';
+  }
+
+  &__amount {
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 90px;
+    color: white;
+    font-family: 'Roboto Condensed';
+  }
+}
